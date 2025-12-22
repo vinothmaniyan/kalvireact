@@ -6,12 +6,19 @@ import reportWebVitals from './reportWebVitals';
 var sobj={
   rno:1001,
   sname:"vinoth",
-  mark:100,
+  mark:[100,200,300,400],
   rank:1,
   grade:"destinction",
   location:"thenniali",
   issingle:"false",
   aadtharno:900964067414,
+  hobbies:{
+    hob1:"chess",
+    hob2:"travel",
+    hob3:"music",
+    hob4:"reading book"
+
+  }
 
 
 }

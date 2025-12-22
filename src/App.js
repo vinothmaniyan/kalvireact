@@ -1,34 +1,77 @@
-import React from "react";
-import parse from 'html-react-parser';
-class App extends React.Component
+function App(props)
+// data types kandupudikirathu
 {
-  constructor(props)
-  {
-    var ans=""
-    super(props)
-    for(var s in props.data)
-  {
-      ans=ans+`${s} =${props.data[s]}<br></br>`
-      console.log(s)
-    }
-    this.state={
-      res:ans
-    }
-  }
-  render()
-    {
-      return(
-        <>
-        <h1>compine react state+props</h1>
-        {parse(this.state.res)}
-      <div id="res"></div>
-        </>
-      )
+  var a=props.data.rno
+  var b=props.data.sname
+  var c=props.data.issingle
+  var d=props.data.mark
+  var e=props.data.hobbies
+  return(
+    <>
+    <h3>type of rno:{typeof(a)}</h3>
+    <h3>type of sname:{typeof(b)}</h3>
+    <h3>type of marital status:{typeof(c)}</h3>
+    <h3>type mark:{typeof(d)}</h3>
+    <h3>{Array.isArray(d)?"it is array":"it is object json"}</h3>
+    <h3>{Array.isArray(e)?"it is array":"it is object json"}</h3>
+    
 
-    }
-  
+    </>
+  )
 }
 export default App
+// ithu vanthu function components class  componenets ah vita ithutha analla irukum easy ah purium
+// import parse from 'html-react-parser';
+// function App(props)
+// {
+//   var ans=""
+//   for(var s in props.data)
+//   {
+//     ans=ans+`<li>${s}=${props.data[s]}</li>`
+//     console.log(s)
+
+//   }
+//   return(
+//     <>
+//     {parse("<ol>"+ans+"</ol>")}
+//     </>
+//   )
+// }
+// export default App
+// import React from "react";
+// import parse from 'html-react-parser';
+// class App extends React.Component
+// {
+//   constructor(props)
+//   {
+//     var ans=""
+//     super(props)
+//     for(var s in props.data)
+//   {
+//       ans=ans+`<li>${s} =${props.data[s]}<br></br></li>`
+//       console.log(s)
+//     }
+//     this.state={
+//       res:"<ol type=I>"+ans+"</ol>"
+//     }
+//     // this.state={
+//     //   res:ans
+//     // }
+//   }
+//   render()
+//     {
+//       return(
+//         <>
+//         <h1>compine react state+props</h1>
+//         {parse(this.state.res)}
+//       <div id="res"></div>
+//         </>
+//       )
+
+//     }
+  
+// }
+// export default App
 // import React from "react";
 // class App extends React.Component
 // {
