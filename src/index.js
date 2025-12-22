@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+var sobj={
+  rno:1001,
+  sname:"vinoth",
+  mark:100,
+  rank:1,
+  grade:"destinction",
+  location:"thenniali",
+  issingle:"false",
+  aadtharno:900964067414,
+
+
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App data={sobj}/>
   </React.StrictMode>
 );
 
