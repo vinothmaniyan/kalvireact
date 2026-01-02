@@ -6,8 +6,7 @@ import reportWebVitals from './reportWebVitals';
 var sobj={
   rno:1001,
   sname:"vinoth",
-  mark:[100,200,300,400],
-  rank:1,
+  mark:[100,200,300,400],  rank:1,
   grade:"destinction",
   location:"thenniali",
   issingle:"false",
